@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Form</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+
+  <div class="sidebar">
+    <h3>Saved Customers</h3>
+    <div id="customerList"></div>
+  </div>
+
+  <div class="main">
+    <h2>Customer Details</h2>
+    <button type="button" id="newBtn">New</button>
+    <form id="customerForm">
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" disabled />
+      <input type="text" id="fatherName" placeholder="Father's Name" disabled />
+      <input type="number" id="age" placeholder="Age" disabled />
+      <input type="email" id="email" placeholder="Email" disabled />
+      <input type="text" id="mobile" placeholder="Mobile Number" disabled />
+      <textarea id="address" placeholder="Address" disabled></textarea>
+      <div id="statusMsg"></div>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
